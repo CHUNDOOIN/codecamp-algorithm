@@ -6,7 +6,7 @@ function countLetter(str) {
       count += 1;
     }
   }
-  return count
+  return count;
 }
 
 countLetter("I am from Korea"); // 2
