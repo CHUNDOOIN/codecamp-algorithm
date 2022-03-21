@@ -1,12 +1,14 @@
 function bigNum(str) {
-  let biggest = 0;
+	let biggest = 0;
+
   for (let i = 0; i < str.length; i++) {
-    if (Number(str[i]) > biggest) {
-      biggest = Number(str[i]);
-    }
+    if (str[i] > biggest) {
+      biggest = str[i]
+      console.log(biggest)
+    } 
   }
-  console.log(biggest);
+  return biggest
 }
 
-bigNum("12345"); // 5
-bigNum("87135"); // 8
+bigNum("12345") // 5
+bigNum("87135") // 8
