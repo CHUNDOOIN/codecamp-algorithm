@@ -1,15 +1,23 @@
-// function solution(s) {
-//   let arr = s.split("");
-//   if (arr.length === 4 || arr.length === 6) {
-//     for (let i = 0; i < arr.length; i++) {
-//       if (isNaN(parseInt(arr[i])) === true) {
-//         return false;
-//       } else {
-//         return true;
-//       }
-//     }
-//   } else {
-//     answer = false;
-//   }
-//   return answer;
-// }
+function solution(s) {
+  if (s.length !== 4 && s.length !== 6) {
+    return false;
+  }
+  for (let i = 0; i < s.length; i++) {
+    if (isNaN(s[i]) === true) {
+      return false;
+    }
+  }
+  return true;
+}
+
+// 리팩토링
+function solution(s) {
+  if (s.length !== 4 && s.length !== 6) {
+    return false;
+  }
+
+  const answer = s.split("").filter((num) => {
+    return isNaN(num) === true;
+  });
+  return answer.length === 0 ? true : false;
+}
