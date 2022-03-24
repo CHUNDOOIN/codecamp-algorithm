@@ -8,3 +8,5 @@ function solution(n) {
 
   return answer;
 }
+
+// 리듀스 사용
