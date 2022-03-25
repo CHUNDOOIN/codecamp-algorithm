@@ -9,3 +9,19 @@ function solution(array, commands) {
   }
   return answer;
 }
+
+// arr.sort ( (a, b) => {
+//   return a > b ? -1 : 1 // 내림차순
+//   return a > b ? 1 : -1 // 오름차순
+// })
+
+// 예시
+// let arr = ["a", "b", "c", "A", "Z"]
+
+// arr.sort ( (a, b) => {
+//   return a > b ? -1 : 1 // 내림차순
+// })
+
+// arr.sort ( (a, b) => {
+//   return a > b ? 1 : -1 // 오름차순
+// })
