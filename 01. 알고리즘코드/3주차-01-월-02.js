@@ -1,21 +1,21 @@
 // function solution(s) {
-//     let answer = ""
-//     let arr = s.split(" ")
+//   let answer = "";
+//   let arr = s.split(" ");
 
-//     for (let i = 0; i < arr.length; i++) {
-//         for (let j = 0; j < arr[i].length; j++) {
-//             if (j % 2 === 1) {
-//                 answer += arr[i][j].toLowerCase()
-//             } else {
-//                 answer += arr[i][j].toUpperCase()
-//             }
-//         }
-//       answer += " "
+//   for (let i = 0; i < arr.length; i++) {
+//     for (let j = 0; j < arr[i].length; j++) {
+//       if (j % 2 === 1) {
+//         answer += arr[i][j].toLowerCase();
+//       } else {
+//         answer += arr[i][j].toUpperCase();
+//       }
 //     }
-//     return answer
+//     answer += " ";
+//   }
+//   return answer;
 // }
 
-// solution("try hello world")
+// solution("try hello world");
 
 // function solution(s) {
 //   let answer = "";
