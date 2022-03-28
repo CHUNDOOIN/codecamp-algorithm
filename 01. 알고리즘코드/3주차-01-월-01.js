@@ -11,10 +11,6 @@ function solution(s) {
       y_count.push(s[i]);
     }
   }
-  if (p_count.length === y_count.length) {
-    return true;
-  } else {
-    return false;
-  }
-  return;
+
+  return p_count.length === y_count.length ? true : false;
 }
